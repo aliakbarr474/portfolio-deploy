@@ -1,0 +1,130 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  background-color: #020617; 
+  position: relative;
+  z-index: 10;
+}
+
+.about-grid {
+  max-width: 72rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.section-tag {
+  color: #60a5fa;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.about-skills {
+  background-color: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skills-title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); 
+  gap: 0.75rem;
+}
+
+.skill-badge {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-badge:hover {
+  border-color: #60a5fa;
+  color: #ffffff;
+  background-color: rgba(96, 165, 250, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 6rem 2rem;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-skills {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+  }
+  
+  .skills-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+    gap: 1rem;
+  }
+  
+  .skill-badge {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
