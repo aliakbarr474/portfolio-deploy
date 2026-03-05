@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className="navbar-wrapper">
       <nav className={`navbar-pill ${isScrolled ? 'scrolled' : ''}`}>
-        <a href="#" onClick={(e) => scrollToSection(e, 'top')} className="navbar-logo">
+        <a href="/" onClick={(e) => scrollToSection(e, 'top')} className="navbar-logo">
           Ali<span className="logo-dot">.</span>
         </a>
         

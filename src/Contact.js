@@ -59,7 +59,7 @@ const Contact = () => {
               <span className="dot green"></span>
             </div>
             <div className="terminal-body">
-              <p className="code-comment">// Awaiting incoming transmission...</p>
+              <p className="code-comment"> Awaiting incoming transmission...</p>
 
               <div className="meta-block">
                 <span className="meta-key">const</span> <span className="meta-var">location</span> = <span className="meta-string">"Quetta, PK"</span>;
